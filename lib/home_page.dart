@@ -10,21 +10,6 @@ class Person {
   Person(this.name, this.surname, this.age);
 }
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'search_page',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
 class MyHomePage extends StatelessWidget {
   static List<Person> people = [
     Person('Raghvendra', 'Tiwari', 30),
